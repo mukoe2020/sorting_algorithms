@@ -26,7 +26,7 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void swapping(int *m, int *h);
 void insertion_sort_list(listint_t **list);
-void swap_n(listint_t **head, *firstnode, *secondnode);
+void swap_n(listint_t **head, listint_t *firstnode, listint_t *secondnode);
 void selection_sort(int *array, size_t size);
 
 #endif /* SORT_H */
