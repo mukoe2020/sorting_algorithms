@@ -50,14 +50,14 @@ size_t mid, size_t right)
 */
 void merge_recursion(int *subset, int *sorted_set, size_t left, size_t right)
 {
-	size_t middle;
+	size_t mid;
 
 	if (right - left > 1)
 	{
-		middle = left + (right - left) / 2;
-		merge_recursion(subset, sorted_set, left, middle);
-		merge_recursion(subset, sorted_set, middle, right);
-		merge_sub_set(subset, sorted_set, left, middle, right);
+		mid = left + (right - left) / 2;
+		merge_recursion(subset, sorted_set, left, mid);
+		merge_recursion(subset, sorted_set, mid, right);
+		merge_sub_set(subset, sorted_set, left, mid, right);
 	}
 }
 
@@ -68,16 +68,16 @@ void merge_recursion(int *subset, int *sorted_set, size_t left, size_t right)
 */
 void merge_sort(int *array, size_t size)
 {
-	int *subset;
+	int *sorted_set;
 
 	if (array == NULL || size < 2)
 	return;
 
-	subset = malloc(sizeof(int) * size);
-	if (subset == NULL)
+	sorted_set = malloc(sizeof(int) * size);
+	if (sorted_set == NULL)
 	return;
 
-	merge_recursion(array, subset, 0, size);
+	merge_recursion(array, sorted_set, 0, size);
 
-	free(subset);
+	free(sorted_set);
 }
