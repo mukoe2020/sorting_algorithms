@@ -35,6 +35,11 @@ void swap_ahead(listint_t **head, listint_t **currentnode,
 listint_t **nextnode);
 void swap_behind(listint_t **head, listint_t **currentnode,
 		listint_t **prevnode);
+void merge_sort(int *array, size_t size);
+void merge_sub_set(int *subset, int *sorted_set, size_t left,
+size_t mid, size_t right);
+void merge_recursion(int *sub_set, int *sorted_set, size_t left, size_t right);
+
 
 #endif /* SORT_H */
 
