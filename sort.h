@@ -30,5 +30,11 @@ void swap_n(listint_t **head, listint_t *firstnode, listint_t *secondnode);
 void selection_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
+void swap_ahead(listint_t **head, listint_t **currentnode,
+listint_t **nextnode);
+void swap_behind(listint_t **head, listint_t **currentnode,
+		listint_t **prevnode);
 
 #endif /* SORT_H */
+
