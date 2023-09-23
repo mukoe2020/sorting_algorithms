@@ -10,25 +10,31 @@
  * Return: void
  */
 
-void selection_sort(int *array, size_t size) {
+void selection_sort(int *array, size_t size)
+{
 	size_t i, step, min_idx;
 	int tmp;
 
-	for (step = 0; step < size - 1; step++) {
+	for (step = 0; step < size - 1; step++)
+	{
 		min_idx = step;
-		for (i = step + 1; i < size; i++) {
+		for (i = step + 1; i < size; i++)
+		{
 			if (array[i] < array[min_idx])
 				min_idx = i;
 		}
 
-		if (min_idx != step) {
+		if (min_idx != step)
+		{
 			tmp = array[step];
 			array[step] = array[min_idx];
 			array[min_idx] = tmp;
 
-			for (i = 0; i < size; i++) {
+			for (i = 0; i < size; i++)
+			{
 				printf("%d", array[i]);
-				if (i < size - 1) {
+				if (i < size - 1)
+				{
 					printf(", ");
 				}
 			}
