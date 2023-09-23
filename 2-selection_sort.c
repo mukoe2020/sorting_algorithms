@@ -1,15 +1,11 @@
 #include "sort.h"
-#include "stdio.h"
-
+#include <stdio.h>
 
 /**
  * selection_sort - sorts an array of integers in ascending order
  * @array: The array
  * @size: The size of the array
- *
- * Return: void
  */
-
 void selection_sort(int *array, size_t size)
 {
 	size_t i, step, min_idx;
@@ -30,15 +26,8 @@ void selection_sort(int *array, size_t size)
 			array[step] = array[min_idx];
 			array[min_idx] = tmp;
 
-			for (i = 0; i < size; i++)
-			{
-				printf("%d", array[i]);
-				if (i < size - 1)
-				{
-					printf(", ");
-				}
-			}
-			printf("\n");
+			print_array(array, size);
 		}
 	}
 }
+
