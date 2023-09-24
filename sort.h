@@ -39,7 +39,8 @@ void merge_sort(int *array, size_t size);
 void merge_sub_set(int *subset, int *sorted_set, size_t left,
 size_t mid, size_t right);
 void merge_recursion(int *sub_set, int *sorted_set, size_t left, size_t right);
-
+void radix_sort(int *array, size_t size);
+int maximum_int(int *array, int size);
+void radix_algorithm(int *array, size_t size, int sg, int *sorted_set);
 
 #endif /* SORT_H */
-
