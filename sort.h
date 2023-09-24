@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* macros for bitonic sort algorithm*/
+#define UP 0
+#define DOWN 1
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -42,5 +46,12 @@ void merge_recursion(int *sub_set, int *sorted_set, size_t left, size_t right);
 void radix_sort(int *array, size_t size);
 int maximum_int(int *array, int size);
 void radix_algorithm(int *array, size_t size, int sg, int *sorted_set);
+void bitonic_sort(int *array, size_t size);
+void bitonic_sequence(int *array, size_t count, size_t index,
+size_t sq, char flow);
+void bitonic_merging(int *array, size_t count, size_t index,
+size_t sq, char flow);
+
+
 
 #endif /* SORT_H */
