@@ -1,15 +1,10 @@
 #include "sort.h"
 
 void swapping(int *m, int *h);
-
 void bitonic_sort(int *array, size_t size);
-
 void bitonic_sequence(int *array, size_t count, size_t index,
-
 size_t sq, char flow);
-
 void bitonic_merging(int *array, size_t count, size_t index,
-
 size_t sq, char flow);
 
 /**
@@ -38,7 +33,6 @@ void swapping(int *m, int *h)
 * @flow: the direction of the bitonic sequence
 */
 void bitonic_sequence(int *array, size_t count, size_t index,
-
 size_t sq, char flow)
 {
 	size_t half = sq / 2;
