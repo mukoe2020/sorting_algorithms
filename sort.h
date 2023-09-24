@@ -32,6 +32,8 @@ void swapping(int *m, int *h);
 void insertion_sort_list(listint_t **list);
 void swap_n(listint_t **head, listint_t *firstnode, listint_t *secondnode);
 void selection_sort(int *array, size_t size);
+
+
 void shell_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
@@ -39,6 +41,8 @@ void swap_ahead(listint_t **head, listint_t **currentnode,
 listint_t **nextnode);
 void swap_behind(listint_t **head, listint_t **currentnode,
 		listint_t **prevnode);
+
+
 void merge_sort(int *array, size_t size);
 void merge_sub_set(int *subset, int *sorted_set, size_t left,
 size_t mid, size_t right);
@@ -46,6 +50,8 @@ void merge_recursion(int *sub_set, int *sorted_set, size_t left, size_t right);
 void radix_sort(int *array, size_t size);
 int maximum_int(int *array, int size);
 void radix_algorithm(int *array, size_t size, int sg, int *sorted_set);
+
+
 void bitonic_sort(int *array, size_t size);
 void bitonic_sequence(int *array, size_t count, size_t index,
 size_t sq, char flow);
