@@ -35,7 +35,7 @@ size_t mid, size_t right)
 	for (i = left, k = 0; i < right; i++)
 		subset[i] = sorted_set[k++];
 
-	printf("[Done] ");
+	printf("[Done]: ");
 	print_array(subset + left, right - left);
 
 }
@@ -71,11 +71,11 @@ void merge_sort(int *array, size_t size)
 	int *sorted_set;
 
 	if (array == NULL || size < 2)
-	return;
+		return;
 
 	sorted_set = malloc(sizeof(int) * size);
 	if (sorted_set == NULL)
-	return;
+		return;
 
 	merge_recursion(array, sorted_set, 0, size);
 
