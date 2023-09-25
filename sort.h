@@ -60,5 +60,9 @@ size_t sq, char flow);
 
 void counting_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
+int partitioner(int *array, size_t size, int low, int high);
+void quick_sort_recursion(int *array, size_t size, int low, int high);
+
 
 #endif /* SORT_H */
