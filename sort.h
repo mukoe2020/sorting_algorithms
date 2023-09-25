@@ -58,6 +58,7 @@ size_t sq, char flow);
 void bitonic_merging(int *array, size_t count, size_t index,
 size_t sq, char flow);
 
-
+void counting_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif /* SORT_H */
