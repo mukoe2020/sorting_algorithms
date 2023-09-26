@@ -28,10 +28,8 @@ Big O notation is a tool for expressing and comparing the efficiency of algorith
 Sorting Algorithm            |            Summary
 --------------------------   | --------------------------------------------------------                     
 Bubble Sort                  |  Simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and sorts them if they are in wrong order. Relatively inefficient for large datasets but easy to understand and implement.
-Selection Sort               | Sorts an array by repeatedly finding the minimum element from the unsorted part and moving it to the sorted part.
-Simple and straightforward but not very efficient for large datasets.
-Insertion Sort               | Builds the final sorted array one item at a time by repeatedly taking an element from the unsorted part and inserting it into its correct position.
-Efficient for small datasets and nearly sorted data.
+Selection Sort               | Sorts an array by repeatedly finding the minimum element from the unsorted part and moving it to the sorted part.Simple and straightforward but not very efficient for large datasets.
+Insertion Sort               | Builds the final sorted array one item at a time by repeatedly taking an element from the unsorted part and inserting it into its correct position. Efficient for small datasets and nearly sorted data.
 Quick Sort                   | Divide-and-conquer algorithm that chooses a pivot, partitions the array, and recursively sorts subarrays.
 Shell Sort                   | Variation of insertion sort that uses varying gap sizes to perform partial sorting. Gap sizes are based on Knuth's sequence, which provides good performance characteristics.
 Cocktail Sort                | Variant of bubble sort that sorts in both directions (forward and backward) through the list. More efficient than traditional bubble sort in some cases.
