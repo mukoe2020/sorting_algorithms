@@ -37,7 +37,7 @@ Bitonic Sort                 | A parallel sorting algorithm that recursively bui
 Quick Sort(Hoare Partition)  | Quick Sort variant that uses the Hoare partition scheme to select a pivot(the last element in the array) and partition the array. Efficient and widely used sorting algorithm
 
 
-## Big O notation/ Time Complexity
+## Big O notation/Time Complexity
 Big O notation, often referred to as time complexity, is a mathematical notation used to describe the upper bound or worst-case behavior of an algorithm's runtime as a function of its input size. It provides a way to analyze and compare the efficiency of algorithms without getting into fine-grained details, In summary
 Big O notation is a tool for expressing and comparing the efficiency of algorithms by providing an upper bound on their runtime in relation to the input size, helping us make informed choices when selecting algorithms for various tasks. With every sorting algorithm, there are best cases, average cases and worst cases when it comes to the time they take to run.
 
@@ -58,3 +58,13 @@ Sorting Algorithm      | Best Case         | Average Case        | Worst Case
 ---------------------- | ----------------- | ------------------- | ---------------------------------
 Bubble Sort            | O(n)              | O(n^2)              | O(n^2)
 Insertion Sort         | O(n)              | O(n^2)              | O(n^2)
+Selection Sort         | O(n+k)            | O(n+k)              | O(n+k) 
+Quick Sort             | O(nlog(n))        | O(nlog(n))          | O(nlog(n))
+Shell Sort             | O(nlog(n))        | O(n^1.3)            | O(n^2)
+Cocktail Sort          | O(n)              | 0(n^2)              | O(n^2)
+Counting Sort          | O(n+k)            | O(n+k)              | O(n+k)
+Merge Sort             | O(nlog(n))        | O(nlog(n))          | O(nlog(n))
+Heap Sort              | O(nlog(n))        | O(nlog(n))          | O(nlog(n))
+Radix Sort             | O(n * k)          | O(n * k)            | O(n * k)
+Bitonic Sort           | O(log^2(n))       | O(log^2(n))         | O(log^2(n))
+Quick Sort(Hoare-P)    | O(nlog(n))        | O(nlog(n))          | O(n^2)
