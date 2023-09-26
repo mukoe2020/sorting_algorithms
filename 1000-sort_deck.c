@@ -2,22 +2,21 @@
 
 /**
 *swap - swaps 2 nodes in a doubly-linked list
-*@a: address of first node
-*@b: address of second node
-*afua task
+*@m: address of first node
+*@h: address of second node
 *
 *Return: void
 */
-void swap(deck_node_t *a, deck_node_t *b)
+void swap(deck_node_t *m, deck_node_t *h)
 {
-	if (a->prev)
-		a->prev->next = b;
-	if (b->next)
-		b->next->prev = a;
-	a->next = b->next;
-	b->prev = a->prev;
-	a->prev = b;
-	b->next = a;
+	if (m->prev)
+		m->prev->next = h;
+	if (h->next)
+		h->next->prev = m;
+	m->next = h->next;
+	h->prev = m->prev;
+	m->prev = h;
+	h->next = m;
 }
 
 /**
@@ -64,8 +63,8 @@ void sort_deck(deck_node_t **deck)
 
 /**
 * less_than - determines comparison order between two cards
-* @a: pointer of first card
-* @b: pointer of second card
+* @a: pointer to first card
+* @b: pointer to second card
 *
 * Return: true if a > b
 */

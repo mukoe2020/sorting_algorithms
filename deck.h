@@ -46,7 +46,7 @@ typedef struct deck_node_s
 	struct deck_node_s *next;
 } deck_node_t;
 
-
+void swap(deck_node_t *m, deck_node_t *h);
 void sort_deck(deck_node_t **deck);
 int less_than(const card_t *a, const card_t *b);
 void cocktail_sort_list(deck_node_t **list);
