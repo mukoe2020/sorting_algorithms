@@ -27,9 +27,9 @@ Big O notation is a tool for expressing and comparing the efficiency of algorith
 
 Sorting Algorithm   | Description
 ------------------- |-----------------------------
-Bubble Sort         | * Simple sorting algorithm that repeatedly steps through the list, compares adjacent
-                    | elements and sorts them if they are in wrong order.
-                    | * Relatively inefficient for large datasets but easy to understand and implement.
+Bubble Sort         |Simple sorting algorithm that repeatedly steps through the list, compares adjacent
+elements and sorts them if they are in wrong order.
+Relatively inefficient for large datasets but easy to understand and implement.
                     |
                     |
                     |
