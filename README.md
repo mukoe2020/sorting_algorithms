@@ -39,8 +39,22 @@ Quick Sort(Hoare Partition)  | Quick Sort variant that uses the Hoare partition 
 
 ## Big O notation/ Time Complexity
 Big O notation, often referred to as time complexity, is a mathematical notation used to describe the upper bound or worst-case behavior of an algorithm's runtime as a function of its input size. It provides a way to analyze and compare the efficiency of algorithms without getting into fine-grained details, In summary
-Big O notation is a tool for expressing and comparing the efficiency of algorithms by providing an upper bound on their runtime in relation to the input size, helping us make informed choices when selecting algorithms for various tasks. With every sorting algorithm, there are best cases, average cases and worst cases when it comes to the time they take to run. The following table shows the algorithms done in this project, and their time complexities
+Big O notation is a tool for expressing and comparing the efficiency of algorithms by providing an upper bound on their runtime in relation to the input size, helping us make informed choices when selecting algorithms for various tasks. With every sorting algorithm, there are best cases, average cases and worst cases when it comes to the time they take to run.
+
+* O(1) - Constant Time: Represents algorithms with a fixed and constant runtime, regardless of input size
+* O(n) - Linear Time: Represents algorithms where the runtime grows linearly with input size. eg linear search through an unsorted array
+* O(log n) - Logarithmic Time: Represents algorithms whose runtime grows logarithmically with input size.
+eg Binary search in a sorted array.
+* O(n log n) - Linearithmic Time: Represents algorithms with runtime between linear and quadratic, common in efficient sorting algorithms.
+* O(n^2) - Quadratic Time: Represents algorithms where the runtime grows quadratically with input size.
+* O(n^k) - Polynomial Time: Represents algorithms with a polynomial growth rate, eg Some matrix multiplication algorithms have O(n^3) time complexity.
+* O(2^n) - Exponential Time: Represents algorithms with an exponential growth rate. Eg Some brute-force search algorithms have O(2^n) time complexity.
+* O(n!) - Factorial Time: Represents algorithms with factorial growth rate.
+* O(n^k * log n) - Polynomialithmic Time: Represents algorithms with a combination of polynomial and logarithmic growth.
+
+The following table shows the algorithms done in this project, and their time complexities
 
 Sorting Algorithm      | Best Case         | Average Case        | Worst Case
 ---------------------- | ----------------- | ------------------- | ---------------------------------
 Bubble Sort            | O(n)              | O(n^2)              | O(n^2)
+Insertion Sort         | O(n)              | O(n^2)              | O(n^2)
