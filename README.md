@@ -36,8 +36,7 @@ Cocktail Sort                | Variant of bubble sort that sorts in both directi
 Counting Sort                | Non-comparative integer sorting algorithm that uses counting to determine the position of elements in the sorted output. Efficient for sorting a range of integers with a limited range of values.
 Merge Sort                   | Divide-and-conquer algorithm that divides the array into smaller subarrays, sorts them, and then merges them back together, Offers stable sorting.
 Heap Sort                    | Uses a binary heap data structure to build a heap and repeatedly extract the maximum element to sort the array.
-Radix Sort                   | Non-comparative sorting algorithm that sorts numbers by processing individual digits or characters from the least significant to the most significant.
-Efficient for sorting integers and strings with fixed-length keys
+Radix Sort                   | Non-comparative sorting algorithm that sorts numbers by processing individual digits or characters from the least significant to the most significant. Efficient for sorting integers and strings with fixed-length keys
 Bitonic Sort                 | A parallel sorting algorithm that recursively builds a bitonic sequence and then merges it to produce a sorted result, Suitable for parallel processing architectures.
 Quick Sort(Hoare Partition)  | Quick Sort variant that uses the Hoare partition scheme to select a pivot(the last element in the array) and partition the array. Efficient and widely used sorting algorithm
 
